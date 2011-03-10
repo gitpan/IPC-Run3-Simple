@@ -13,16 +13,11 @@ use warnings;
 use lib '../lib';
 use lib 'lib';
 
-use Test::More;
-use Try::Tiny;
 use Path::Class qw(file);
+use Test::More;
 
-try {
-  use Test::Perl::Critic::Progressive qw( :all );
-}
-catch {
-  plan skip_all => 'T::P::C::Progressive required for this test' if $@;
-};
+eval "use Test::Perl::Critic::Progressive qw( :all )";
+plan skip_all => 'Test::Perl::Critic::Progressive required to criticise code' if $@;
 
 my $root_path = q</home/harleypig/projects/IPC-Run3-Simple>;
 my $step_size = 0;

@@ -14,8 +14,6 @@ my %module_build_args = (
     'Path::Class' => '0',
     'Scalar::Util' => '0',
     'Test::More' => '0.94',
-    'Test::Perl::Critic::Progressive' => '0',
-    'Try::Tiny' => '0',
     'perl' => '5.004'
   },
   'configure_requires' => {
@@ -26,7 +24,7 @@ my %module_build_args = (
     'Alan Young <harleypig@gmail.com>'
   ],
   'dist_name' => 'IPC-Run3-Simple',
-  'dist_version' => '0.002',
+  'dist_version' => '0.003',
   'license' => 'perl',
   'module_name' => 'IPC::Run3::Simple',
   'recommends' => {},

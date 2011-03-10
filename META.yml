@@ -10,8 +10,6 @@ build_requires:
   Path::Class: 0
   Scalar::Util: 0
   Test::More: 0.94
-  Test::Perl::Critic::Progressive: 0
-  Try::Tiny: 0
   perl: 5.004
 configure_requires:
   Module::Build: 0.3601
@@ -29,7 +27,7 @@ no_index:
 provides:
   IPC::Run3::Simple:
     file: lib/IPC/Run3/Simple.pm
-    version: 0.002
+    version: 0.003
 requires:
   Carp: 0
   Exporter: 0
@@ -37,4 +35,4 @@ requires:
 resources:
   bugtracker: https://github.com/harleypig/ipc-run3-simple/issues
   repository: git://github.com/harleypig/ipc-run3-simple.git
-version: 0.002
+version: 0.003
